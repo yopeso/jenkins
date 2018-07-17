@@ -15,6 +15,6 @@ USER root
 RUN groupadd -g 497 docker && groupadd -g 999 dockerkubernetes && \
     gpasswd -a jenkins docker &&  gpasswd -a jenkins dockerkubernetes
 
-RUN apt-get update && apt-get install -y libltdl7 && apt-get clean all
+RUN apt-get update && apt-get install -y libltdl7 gettext && apt-get clean all
 
 USER jenkins
