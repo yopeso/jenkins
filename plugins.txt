@@ -1,3 +1,4 @@
+jdk-tool:latest
 bouncycastle-api:latest
 pipeline-stage-step:latest
 cloudbees-folder:latest
