@@ -1,5 +1,5 @@
 
-FROM jenkins/jenkins:2.176.1
+FROM jenkins/jenkins:2.176.2
 MAINTAINER bogdan.suciu@yopeso.com
 
 #Set number of executors
