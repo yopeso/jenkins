@@ -7,8 +7,7 @@ COPY executors.groovy /usr/share/jenkins/ref/init.groovy.d/executors.groovy
 
 #Install default plugins and mark Jenkins as fully configured
 COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
-COPY plugins.txt /tmp/plugins.txt
-RUN /usr/local/bin/install-plugins.sh < /tmp/plugins.txt
+RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 
 # Disable installation of plugins during setup wizard
 COPY disable-plugin-install-wizard.groovy /usr/share/jenkins/ref/init.groovy.d/
