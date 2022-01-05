@@ -1,5 +1,5 @@
 
-FROM jenkins/jenkins:2.322
+FROM jenkins/jenkins:2.319.1-lts
 MAINTAINER bogdan.suciu@yopeso.com
 USER root
 #Set number of executors
